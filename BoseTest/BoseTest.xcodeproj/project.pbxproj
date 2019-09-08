@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		790D431C2325810600D07429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431B2325810600D07429 /* AppDelegate.swift */; };
-		790D431E2325810600D07429 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431D2325810600D07429 /* ViewController.swift */; };
+		790D431E2325810600D07429 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431D2325810600D07429 /* HomeViewController.swift */; };
 		790D43212325810600D07429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790D431F2325810600D07429 /* Main.storyboard */; };
 		790D43232325810700D07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790D43222325810700D07429 /* Assets.xcassets */; };
 		790D43262325810700D07429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790D43242325810700D07429 /* LaunchScreen.storyboard */; };
@@ -19,6 +19,7 @@
 		790D43412325823000D07429 /* BoseWearable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433C2325822800D07429 /* BoseWearable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		790D43422325823000D07429 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433D2325822800D07429 /* Logging.framework */; };
 		790D43432325823000D07429 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433D2325822800D07429 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		790D43472325887300D07429 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D43462325887300D07429 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,7 @@
 /* Begin PBXFileReference section */
 		790D43182325810600D07429 /* BoseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790D431B2325810600D07429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		790D431D2325810600D07429 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		790D431D2325810600D07429 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		790D43202325810600D07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		790D43222325810700D07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790D43252325810700D07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		790D433B2325822700D07429 /* BLECore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECore.framework; sourceTree = "<group>"; };
 		790D433C2325822800D07429 /* BoseWearable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoseWearable.framework; sourceTree = "<group>"; };
 		790D433D2325822800D07429 /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = "<group>"; };
+		790D43462325887300D07429 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				790D431B2325810600D07429 /* AppDelegate.swift */,
-				790D431D2325810600D07429 /* ViewController.swift */,
+				790D43452325881C00D07429 /* View Controllers */,
 				790D431F2325810600D07429 /* Main.storyboard */,
 				790D43222325810700D07429 /* Assets.xcassets */,
 				790D43242325810700D07429 /* LaunchScreen.storyboard */,
@@ -125,6 +127,15 @@
 				790D43322325810700D07429 /* Info.plist */,
 			);
 			path = BoseTestTests;
+			sourceTree = "<group>";
+		};
+		790D43452325881C00D07429 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				790D431D2325810600D07429 /* HomeViewController.swift */,
+				790D43462325887300D07429 /* HomeTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790D431E2325810600D07429 /* ViewController.swift in Sources */,
+				790D43472325887300D07429 /* HomeTableViewController.swift in Sources */,
+				790D431E2325810600D07429 /* HomeViewController.swift in Sources */,
 				790D431C2325810600D07429 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
