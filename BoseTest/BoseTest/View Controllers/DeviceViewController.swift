@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import BoseWearable
 
-class HomeViewController: UIViewController {
+class DeviceViewController: UIViewController {
+
+    var session: WearableDeviceSession! {
+        didSet {
+            session?.delegate = self as? WearableDeviceSessionDelegate
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
     }
 }

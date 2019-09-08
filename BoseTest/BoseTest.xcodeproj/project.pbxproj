@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		790D431C2325810600D07429 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431B2325810600D07429 /* AppDelegate.swift */; };
-		790D431E2325810600D07429 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431D2325810600D07429 /* HomeViewController.swift */; };
+		790D431E2325810600D07429 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D431D2325810600D07429 /* DeviceViewController.swift */; };
 		790D43212325810600D07429 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790D431F2325810600D07429 /* Main.storyboard */; };
 		790D43232325810700D07429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790D43222325810700D07429 /* Assets.xcassets */; };
 		790D43262325810700D07429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790D43242325810700D07429 /* LaunchScreen.storyboard */; };
 		790D43312325810700D07429 /* BoseTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D43302325810700D07429 /* BoseTestTests.swift */; };
-		790D433E2325823000D07429 /* BLECore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433B2325822700D07429 /* BLECore.framework */; };
-		790D433F2325823000D07429 /* BLECore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433B2325822700D07429 /* BLECore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		790D43402325823000D07429 /* BoseWearable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433C2325822800D07429 /* BoseWearable.framework */; };
-		790D43412325823000D07429 /* BoseWearable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433C2325822800D07429 /* BoseWearable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		790D43422325823000D07429 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433D2325822800D07429 /* Logging.framework */; };
-		790D43432325823000D07429 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D433D2325822800D07429 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		790D43472325887300D07429 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D43462325887300D07429 /* HomeTableViewController.swift */; };
+		790D435323258C5100D07429 /* BLECore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435023258C4900D07429 /* BLECore.framework */; };
+		790D435423258C5100D07429 /* BLECore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435023258C4900D07429 /* BLECore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		790D435523258C5100D07429 /* BoseWearable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435223258C4900D07429 /* BoseWearable.framework */; };
+		790D435623258C5100D07429 /* BoseWearable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435223258C4900D07429 /* BoseWearable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		790D435723258C5100D07429 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435123258C4900D07429 /* Logging.framework */; };
+		790D435823258C5100D07429 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435123258C4900D07429 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		790D43442325823000D07429 /* Embed Frameworks */ = {
+		790D435923258C5100D07429 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				790D43412325823000D07429 /* BoseWearable.framework in Embed Frameworks */,
-				790D433F2325823000D07429 /* BLECore.framework in Embed Frameworks */,
-				790D43432325823000D07429 /* Logging.framework in Embed Frameworks */,
+				790D435623258C5100D07429 /* BoseWearable.framework in Embed Frameworks */,
+				790D435423258C5100D07429 /* BLECore.framework in Embed Frameworks */,
+				790D435823258C5100D07429 /* Logging.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,7 @@
 /* Begin PBXFileReference section */
 		790D43182325810600D07429 /* BoseTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoseTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		790D431B2325810600D07429 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		790D431D2325810600D07429 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		790D431D2325810600D07429 /* DeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
 		790D43202325810600D07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		790D43222325810700D07429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		790D43252325810700D07429 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,10 +59,10 @@
 		790D432C2325810700D07429 /* BoseTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoseTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		790D43302325810700D07429 /* BoseTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoseTestTests.swift; sourceTree = "<group>"; };
 		790D43322325810700D07429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		790D433B2325822700D07429 /* BLECore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECore.framework; sourceTree = "<group>"; };
-		790D433C2325822800D07429 /* BoseWearable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoseWearable.framework; sourceTree = "<group>"; };
-		790D433D2325822800D07429 /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = "<group>"; };
 		790D43462325887300D07429 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		790D435023258C4900D07429 /* BLECore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECore.framework; sourceTree = "<group>"; };
+		790D435123258C4900D07429 /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = "<group>"; };
+		790D435223258C4900D07429 /* BoseWearable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoseWearable.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				790D43402325823000D07429 /* BoseWearable.framework in Frameworks */,
-				790D433E2325823000D07429 /* BLECore.framework in Frameworks */,
-				790D43422325823000D07429 /* Logging.framework in Frameworks */,
+				790D435523258C5100D07429 /* BoseWearable.framework in Frameworks */,
+				790D435323258C5100D07429 /* BLECore.framework in Frameworks */,
+				790D435723258C5100D07429 /* Logging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,9 +92,7 @@
 				790D431A2325810600D07429 /* BoseTest */,
 				790D432F2325810700D07429 /* BoseTestTests */,
 				790D43192325810600D07429 /* Products */,
-				790D433B2325822700D07429 /* BLECore.framework */,
-				790D433C2325822800D07429 /* BoseWearable.framework */,
-				790D433D2325822800D07429 /* Logging.framework */,
+				790D434823258AC200D07429 /* Libraries */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,10 +130,20 @@
 		790D43452325881C00D07429 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				790D431D2325810600D07429 /* HomeViewController.swift */,
+				790D431D2325810600D07429 /* DeviceViewController.swift */,
 				790D43462325887300D07429 /* HomeTableViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		790D434823258AC200D07429 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				790D435023258C4900D07429 /* BLECore.framework */,
+				790D435223258C4900D07429 /* BoseWearable.framework */,
+				790D435123258C4900D07429 /* Logging.framework */,
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +156,7 @@
 				790D43142325810600D07429 /* Sources */,
 				790D43152325810600D07429 /* Frameworks */,
 				790D43162325810600D07429 /* Resources */,
-				790D43442325823000D07429 /* Embed Frameworks */,
+				790D435923258C5100D07429 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,7 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				790D43472325887300D07429 /* HomeTableViewController.swift in Sources */,
-				790D431E2325810600D07429 /* HomeViewController.swift in Sources */,
+				790D431E2325810600D07429 /* DeviceViewController.swift in Sources */,
 				790D431C2325810600D07429 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +417,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libraries",
 				);
 				INFOPLIST_FILE = BoseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -431,6 +440,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Libraries",
 				);
 				INFOPLIST_FILE = BoseTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

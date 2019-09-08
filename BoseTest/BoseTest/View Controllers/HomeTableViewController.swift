@@ -7,17 +7,48 @@
 //
 
 import UIKit
+import BoseWearable
 
 class HomeTableViewController: UITableViewController {
 
     @IBOutlet weak var connectToLastSwitch: UISwitch!
 
+    private var mode: ConnectUIMode {
+        return connectToLastSwitch.isOn
+            ? .connectToLast(timeout: 5)
+            : .alwaysShow
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
     }
 
     @IBAction func connectButtonTapped(_ sender: Any) {
-        print("Connect!")
+        let sensorIntent = SensorIntent(sensors: [.gameRotation, .accelerometer], samplePeriods: [._20ms])
+        let gestureIntent = GestureIntent(gestures: [.input])
+
+        BoseWearable.shared.startConnection(mode: mode, sensorIntent: sensorIntent, gestureIntent: gestureIntent) { result in
+            switch result {
+            case .success(let session):
+                print(session)
+                navigateToVC(for: session)
+
+            case .failure(let error):
+                print(error)
+                break
+
+            case .cancelled:
+                break
+            }
+        }
+
+        func navigateToVC(for session: WearableDeviceSession) {
+            guard let vc = storyboard?.instantiateViewController(withIdentifier: "DeviceViewController") as? DeviceViewController else {
+                fatalError("Cannot instantiate view controller")
+            }
+
+             vc.session = session
+            show(vc, sender: self)
+        }
     }
 }

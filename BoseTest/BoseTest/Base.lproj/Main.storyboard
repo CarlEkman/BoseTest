@@ -89,7 +89,7 @@
         <!--DeviceController-->
         <scene sceneID="mQD-z5-iYR">
             <objects>
-                <viewController title="DeviceController" id="heW-Ic-ZJQ" customClass="HomeViewController" customModule="BoseTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceViewController" title="DeviceController" id="heW-Ic-ZJQ" customClass="DeviceViewController" customModule="BoseTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="03y-wg-xRN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
