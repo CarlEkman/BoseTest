@@ -1,0 +1,9 @@
+platform :ios, '11.4'
+
+target 'BoseTest' do
+  use_frameworks!
+project 'BoseTest.xcodeproj'
+  pod 'BLECore', :path => 'Libraries/'
+  pod 'Logging', :path => 'Libraries/'
+  pod 'BoseWearable', :path => 'Libraries/'
+end

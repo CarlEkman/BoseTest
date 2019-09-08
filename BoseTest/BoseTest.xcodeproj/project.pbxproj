@@ -20,6 +20,7 @@
 		790D435623258C5100D07429 /* BoseWearable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435223258C4900D07429 /* BoseWearable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		790D435723258C5100D07429 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435123258C4900D07429 /* Logging.framework */; };
 		790D435823258C5100D07429 /* Logging.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 790D435123258C4900D07429 /* Logging.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		790D435B2325A66600D07429 /* scat-song.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 790D435A2325A38C00D07429 /* scat-song.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		790D435023258C4900D07429 /* BLECore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BLECore.framework; sourceTree = "<group>"; };
 		790D435123258C4900D07429 /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = "<group>"; };
 		790D435223258C4900D07429 /* BoseWearable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BoseWearable.framework; sourceTree = "<group>"; };
+		790D435A2325A38C00D07429 /* scat-song.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "scat-song.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		790D430F2325810600D07429 = {
 			isa = PBXGroup;
 			children = (
+				790D435A2325A38C00D07429 /* scat-song.m4a */,
 				790D431A2325810600D07429 /* BoseTest */,
 				790D432F2325810700D07429 /* BoseTestTests */,
 				790D43192325810600D07429 /* Products */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790D435B2325A66600D07429 /* scat-song.m4a in Resources */,
 				790D43262325810700D07429 /* LaunchScreen.storyboard in Resources */,
 				790D43232325810700D07429 /* Assets.xcassets in Resources */,
 				790D43212325810600D07429 /* Main.storyboard in Resources */,

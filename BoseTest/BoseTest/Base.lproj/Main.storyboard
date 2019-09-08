@@ -93,13 +93,49 @@
                     <view key="view" contentMode="scaleToFill" id="03y-wg-xRN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WP-9B-Rq1">
+                                <rect key="frame" x="0.0" y="451" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start Playing"/>
+                                <connections>
+                                    <action selector="startStopPlayerPressed:" destination="heW-Ic-ZJQ" eventType="touchUpInside" id="sU7-kv-JhK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuN-i7-56M">
+                                <rect key="frame" x="201.5" y="572" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k3o-Jv-zEH">
+                                <rect key="frame" x="202" y="611" width="10.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KuN-i7-56M" firstAttribute="top" secondItem="4WP-9B-Rq1" secondAttribute="bottom" constant="73" id="0wQ-XV-mko"/>
+                            <constraint firstItem="4WP-9B-Rq1" firstAttribute="centerY" secondItem="wl4-mH-BfK" secondAttribute="centerY" id="5BL-Wl-bX2"/>
+                            <constraint firstItem="k3o-Jv-zEH" firstAttribute="top" secondItem="KuN-i7-56M" secondAttribute="bottom" constant="18" id="9Xg-ul-gIJ"/>
+                            <constraint firstItem="4WP-9B-Rq1" firstAttribute="centerX" secondItem="wl4-mH-BfK" secondAttribute="centerX" id="MLc-IA-CSA"/>
+                            <constraint firstItem="KuN-i7-56M" firstAttribute="centerX" secondItem="4WP-9B-Rq1" secondAttribute="centerX" id="Vgm-hm-8zn"/>
+                            <constraint firstItem="k3o-Jv-zEH" firstAttribute="centerX" secondItem="4WP-9B-Rq1" secondAttribute="centerX" id="dU7-ca-Mie"/>
+                            <constraint firstItem="4WP-9B-Rq1" firstAttribute="width" secondItem="03y-wg-xRN" secondAttribute="width" id="hpn-nQ-a75"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wl4-mH-BfK"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonText" destination="4WP-9B-Rq1" id="9eV-0V-oOv"/>
+                        <outlet property="pitchText" destination="k3o-Jv-zEH" id="wiq-70-LwP"/>
+                        <outlet property="yawText" destination="KuN-i7-56M" id="9x7-Zk-2Yv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fri-l0-4WV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490" y="783"/>
+            <point key="canvasLocation" x="2489.8550724637685" y="782.8125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k3s-RI-xJi">

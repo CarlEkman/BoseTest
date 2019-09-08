@@ -19,10 +19,6 @@ class HomeTableViewController: UITableViewController {
             : .alwaysShow
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     @IBAction func connectButtonTapped(_ sender: Any) {
         let sensorIntent = SensorIntent(sensors: [.gameRotation, .accelerometer], samplePeriods: [._20ms])
         let gestureIntent = GestureIntent(gestures: [.input])
